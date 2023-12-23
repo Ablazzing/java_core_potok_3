@@ -1,4 +1,4 @@
-package org.example.lessons.lesson8.ex1;
+package org.example.lessons.lesson8.ex3.exceptions;
 
 public class WorkerWithoutAxeException extends Exception {
     public WorkerWithoutAxeException(String message) {
