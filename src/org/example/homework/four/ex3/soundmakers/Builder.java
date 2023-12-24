@@ -1,0 +1,9 @@
+package org.example.homework.four.ex3.soundmakers;
+
+public class Builder extends Human {
+
+    @Override
+    public String makeSound() {
+        return "Я строитель." + super.makeSound();
+    }
+}
