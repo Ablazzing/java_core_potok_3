@@ -29,6 +29,9 @@ public class OneGramChat {
         SCANNER.close();
     }
 
+    /**
+     * Запуск чата
+     */
     public void start() {
         System.out.println("Добро пожаловать в OneGramChat!");
         while (true) {
