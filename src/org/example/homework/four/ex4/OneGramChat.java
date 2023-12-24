@@ -34,18 +34,16 @@ public class OneGramChat {
      */
     public void start() {
         System.out.println("Добро пожаловать в OneGramChat!");
-        while (true) {
+        boolean isEndOfProgram = false;
+        do {
             System.out.println(CHAT_COMMANDS_MESSAGE);
             String commandName = SCANNER.nextLine();
             try {
-                boolean isEndOfProgram = runCommand(commandName);
-                if (isEndOfProgram) {
-                    break;
-                }
+                isEndOfProgram = runCommand(commandName);
             } catch (UserNotFoundException | IncorrectPasswordException | UnAuthorizeException e) {
                 System.out.println(e.getMessage());
             }
-        }
+        } while (isEndOfProgram);
     }
 
     /**
