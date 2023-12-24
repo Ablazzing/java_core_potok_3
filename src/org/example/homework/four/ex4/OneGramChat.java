@@ -45,6 +45,9 @@ public class OneGramChat {
         }
     }
 
+    /**
+     * Запуск команды
+     */
     private boolean runCommand(String commandName) throws UserNotFoundException,
             IncorrectPasswordException, UnAuthorizeException {
         switch (commandName) {
