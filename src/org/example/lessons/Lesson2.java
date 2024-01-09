@@ -1,5 +1,8 @@
 package org.example.lessons;
 
+/**
+ *
+ */
 public class Lesson2 {
     public static void main(String[] args) {
         int money = 40;
